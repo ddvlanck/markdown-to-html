@@ -1,0 +1,23 @@
+{
+  "name": "markdown-to-html",
+  "version": "1.0.0",
+  "description": "Small program that transforms a markdown page with references to a HTML page with links",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddvlanck/markdown-to-html.git"
+  },
+  "author": "Dwight Van Lancker - Informatie Vlaanderen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddvlanck/markdown-to-html/issues"
+  },
+  "homepage": "https://github.com/ddvlanck/markdown-to-html#readme",
+  "dependencies": {
+    "commander": "^4.1.1",
+    "fs": "0.0.1-security"
+  }
+}
