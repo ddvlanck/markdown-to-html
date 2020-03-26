@@ -32,7 +32,7 @@ fs.readFile(markdownFile, 'utf8', (err, data) => {
 function transformData(data){
     // Check if data contains references
     if(data.indexOf('](') >= 0){
-        const references = data.match(/\[.*\]\(.*\)/gm);
+        const references = data.match(/\[.*\]\([^\)]*\)/gm);
         for(let index in references) {
             const reference = references[index];
             const link = '<a href="' + reference.substring(reference.indexOf('(') + 1, reference.indexOf(')')) + '">' + reference.substring(reference.indexOf('[') + 1, reference.indexOf(']')) + '</a>'
